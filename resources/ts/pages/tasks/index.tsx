@@ -60,7 +60,6 @@ const Task: React.FC = () => {
 
     return (
         <div>
-            <hr />
             <div className="inner">
                 <input value={inputTitle} onChange={InputChange} type="text" />
                 <button onClick={handleSubmit}>追加</button>
