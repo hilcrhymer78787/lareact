@@ -12,7 +12,6 @@ const initialState: TaskType[] = []
 
 const Task: React.FC = () => {
 
-    // const [input, setInput] = useState(false);
     const [tasks, setTasks] = useState(initialState)
     const [inputTitle, setInputTitle] = useState('')
 

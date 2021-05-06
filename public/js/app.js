@@ -2118,7 +2118,6 @@ var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/a
 var initialState = [];
 
 var Task = function Task() {
-  // const [input, setInput] = useState(false);
   var _a = react_1.useState(initialState),
       tasks = _a[0],
       setTasks = _a[1];
