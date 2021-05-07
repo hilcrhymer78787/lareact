@@ -6,6 +6,8 @@ const Search = () => {
         <div>
             <h2>Search</h2>
             <p>test</p>
+            <p>test</p>
+            <p>test</p>
             <LoadingIcon/>
         </div>
     )
