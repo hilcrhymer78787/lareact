@@ -10028,6 +10028,10 @@ span {
   max-width: 900px;
 }
 
+.table {
+  box-shadow: 0 0 5px #636363;
+}
+
 .done {
   opacity: 0.3;
 }

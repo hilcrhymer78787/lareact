@@ -67,15 +67,40 @@ const Task: React.FC = () => {
             <div className="inner">
                 {
                     <ul className="task-list">
-                        {tasks.map((task, index) => (
-                            <li className={task.done ? 'done' : ''} key={index.toString()}>
-                                <label>
-                                    <input type="checkbox" onChange={(e) => { taskUpdate(task) }} defaultChecked={task.done} />
-                                    <span>{task.title}</span>
-                                    <button onClick={() => deleteTask(task)}>削除</button>
-                                </label>
-                            </li>
-                        ))}
+                        <div className="container">
+                            <table className="table table-hover">
+                                <thead className="thead-light">
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">完了</th>
+                                        <th scope="col">内容</th>
+                                        <th scope="col">担当者</th>
+                                        <th scope="col">詳細</th>
+                                        <th scope="col">編集</th>
+                                        <th scope="col">削除</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {tasks.map((task, index) => (
+                                        <tr className={task.done ? 'done' : ''} key={index.toString()}>
+                                            <th scope="row">{task.id}</th>
+                                            <td><input type="checkbox" onChange={(e) => { taskUpdate(task) }} defaultChecked={task.done} /></td>
+                                            <td>{task.title}</td>
+                                            <td>未実装</td>
+                                            <td>
+                                                <button className="btn btn-primary">詳細</button>
+                                            </td>
+                                            <td>
+                                                <button className="btn btn-success">編集</button>
+                                            </td>
+                                            <td>
+                                                <button className="btn btn-danger" onClick={() => deleteTask(task)}>削除</button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     </ul>
                 }
             </div>
