@@ -71,7 +71,7 @@ const Task: React.FC = () => {
                             <table className="table table-hover">
                                 <thead className="thead-light">
                                     <tr>
-                                        <th scope="col">id</th>
+                                        <th scope="col">ID</th>
                                         <th scope="col">完了</th>
                                         <th scope="col">内容</th>
                                         <th scope="col">担当者</th>
