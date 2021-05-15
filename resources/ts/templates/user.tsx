@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserTask = () => {
+const User = () => {
     return(
         <div>
             <h1>ユーザータスク</h1>
@@ -70,4 +70,4 @@ const UserTask = () => {
     )
 }
 
-export default UserTask;
+export default User;

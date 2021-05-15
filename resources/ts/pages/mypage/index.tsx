@@ -11,7 +11,7 @@ const userDefault: UserType = {
     email:"noemail",
 }
 
-const User = () => {
+const Mypage = () => {
 
     const [user, setuser] = useState(userDefault)
 
@@ -27,7 +27,7 @@ const User = () => {
 
     return (
         <div>
-            <h2>User</h2>
+            <h2>Mypage</h2>
             私の名前は<span>{user.name}</span><br />
             メールアドレスは<span>{user.email}</span>
             <br />
@@ -37,7 +37,7 @@ const User = () => {
     )
 }
 
-export default User
+export default Mypage
 
 
 
