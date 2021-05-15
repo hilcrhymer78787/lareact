@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import Task from './pages/tasks/index'
 import Search from './pages/search/index'
-import User from './pages/user/index'
-import UserTask from './templates/UserTask'
+import Mypage from './pages/mypage/index'
+import User from './templates/user'
 
 const Router = () => {
     return (
@@ -17,8 +17,8 @@ const Router = () => {
                 <div className="header_nav">
                     <Link to="/web/task">Task</Link>
                     <Link to="/web/search">Search</Link>
+                    <Link to="/web/mypage">Mypage</Link>
                     <Link to="/web/user">User</Link>
-                    <Link to="/web/usertask">Usertask</Link>
                 </div>
             </div>
             <div className="container">
@@ -26,14 +26,14 @@ const Router = () => {
                     <Route path="/web/search">
                         <Search />
                     </Route>
-                    <Route path="/web/user">
-                        <User />
+                    <Route path="/web/mypage">
+                        <Mypage />
                     </Route>
                     <Route path="/web/task">
                         <Task />
                     </Route>
-                    <Route path={"/web/usertask"}>
-                        <UserTask />
+                    <Route path={"/web/user"}>
+                        <User />
                     </Route>
                 </Switch>
             </div>
